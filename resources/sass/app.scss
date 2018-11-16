@@ -15,6 +15,17 @@ html, body {
     font-weight: 700;
 }
 
+.navbar-brand {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.label {
+    background-color: darkgrey;
+    border: none;
+    color: black;
+}
+
 .btn {
     border-radius: 1px !important;
 }
@@ -29,7 +40,7 @@ div > img {
 }
 
 .navbar-laravel {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .75);
     font-family: 'Cinzel', serif;
 }
 
