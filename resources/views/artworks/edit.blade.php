@@ -34,7 +34,7 @@ Edit an Artwork
         <textarea class="form-control text-dark font-weight-bold" name="new_description" id="new_description" placeholder="Brief description of the artwork (Max 1000 characters)"></textarea>
     </div>
     <a href="/home" class="btn col-6 form-control btn-dark float-left">Cancel</a>
-    <button class="btn col-6 form-control btn-dark float-right" type="submit">Submit Artwork</button>
+    <button class="btn col-6 form-control btn-dark float-right" type="submit">Update</button>
 
 </form>
 

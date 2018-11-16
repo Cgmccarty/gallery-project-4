@@ -33,7 +33,7 @@
         <label class="form-control label" for="new_description"><strong>Description</strong></label>
         <textarea class="form-control text-dark font-weight-bold" name="new_description" id="new_description" placeholder="Brief description of the artwork (Max 1000 characters)"></textarea>
     </div>
-    <button class="btn form-control btn-dark" type="submit">Submit Artwork</button>
+    <button class="btn form-control btn-dark" type="submit">Submit</button>
 
 </form>
 

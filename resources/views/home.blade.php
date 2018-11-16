@@ -30,7 +30,7 @@
                         <form class="col-6" action="/artworks/{{ $art->id }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-dark col-12" type="submit">Delete</button>
+                            <button class="btn btn-dark col-12" onclick="confirm('Are you sure you want to delete this?')" type="submit">Delete</button>
                         </form>
                     </div>
                 </div>
