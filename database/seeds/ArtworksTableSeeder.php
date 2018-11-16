@@ -22,16 +22,6 @@ class ArtworksTableSeeder extends Seeder
         $art2->artist_name = 'Claus de Werve';
         $art2->medium = 'Limestone with paint and gilding';
         $art2->url = 'https://upload.wikimedia.org/wikipedia/commons/6/66/WLA_metmuseum_Poligny_Virgin.jpg';
-        $art2->description = "This monumental yet engagingly intimate image of the Virgin and Child was probably
-        a gift of John the Fearless, duke of Burgundy (died 1419), or his wife Margaret of Bavaria (died 1424) to
-        the convent they founded at Poligny dedicated to the Franciscan Order of Poor Clares. This is one of four
-        large sculptures from Poligny in the Museum's collection. As court sculptor in Dijon, the influential artist
-        Claus de Werve (active 1396–ca. 1439) created many works for his patrons, and this is certainly one of his
-        masterpieces. Its original location in the convent is unknown, but the sculpture was probably installed in
-        the area reserved for the devotions of the nuns. In this tender portrayal, Mary's role as a personification of
-        Wisdom is evoked by the open book on Christ's lap. In contrast to the warmth of the depiction of mother and son,
-        the biblical inscription on the bench reminds us of Christ's fulfillment of Old Testament prophecy: \"From the
-        beginning, and before the world, was I created …\" (Ecclesiasticus 24:14).";
         $art2->save();
 
         $art3 = new \App\Artwork;

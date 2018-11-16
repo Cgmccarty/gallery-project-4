@@ -14,19 +14,19 @@ class UsersTableSeeder extends Seeder
         $connor = new \App\User;
         $connor->name = 'Connor';
         $connor->email = 'connor.mccarty.cm@gmail.com';
-        $connor->password = 'secret';
+        $connor->password = bcrypt('secret');
         $connor->save();
 
         $bob = new \App\User;
         $bob->name = 'Bob';
         $bob->email = 'bob@bob.bob';
-        $bob->password = 'secret';
+        $bob->password = bcrypt('secret');
         $bob->save();
 
         $chuck = new \App\User;
         $chuck->name = 'Chuck';
         $chuck->email = 'chuck@chuck.chuck';
-        $chuck->password = 'secret';
+        $chuck->password = bcrypt('secret');
         $chuck->save();
     }
 }

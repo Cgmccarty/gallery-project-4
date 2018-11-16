@@ -1,6 +1,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900');
 
 // Variables
 @import 'variables';
@@ -8,7 +9,30 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+html, body {
+    font-family: 'Cinzel', serif;
+    background-color: darkgrey;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 1px !important;
+}
+
+img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+div > img {
+    border-radius: 1px;
+}
+
 .navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    font-family: 'Cinzel', serif;
+}
+
+.card-body {
+    background-color: darkgrey;
 }

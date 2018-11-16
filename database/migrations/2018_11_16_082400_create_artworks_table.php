@@ -20,7 +20,7 @@ class CreateArtworksTable extends Migration
             $table->string('artist_name', 50)->nullable();
             $table->string('medium', 100)->nullable();
             $table->string('url', 250);
-            $table->text('description')->nullable();
+            $table->string('description', 1000)->nullable();
             $table->timestamps();
         });
     }

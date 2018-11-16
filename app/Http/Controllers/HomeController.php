@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $artworks = \App\Artwork::get()->all();
+        return view('home', compact('artworks'));
     }
 }
