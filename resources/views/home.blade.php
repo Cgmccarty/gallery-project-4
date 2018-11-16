@@ -25,6 +25,7 @@
                         <p class="col-4"><strong>Medium:</strong></p> <p class="col-8">{{ $art->medium ? $art->medium : 'N/A' }}</p>
                         <p class="col-4"><strong>Description:</strong></p> <p class="col-8">{{ $art->description ? $art->description : 'N/A' }}</p>
                     </div>
+                    <a href="/artworks/{{ $art->id }}/edit">Edit</a>
                 </div>
             </div>
         @endforeach

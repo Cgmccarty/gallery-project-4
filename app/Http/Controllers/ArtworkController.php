@@ -13,7 +13,8 @@ class ArtworkController extends Controller
      */
     public function index()
     {
-        return view('/home');
+        $artworks = \App\Artwork::get()->all();
+        return view('/home', compact('artworks'));
     }
 
     /**
@@ -34,7 +35,27 @@ class ArtworkController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $validatedData = $request->validate([
+            'new_artwork_name' => 'required|max:100',
+            'new_url' => 'required|max:250|url',
+            'new_year_completed' => 'max:20',
+            'new_artist_name' => 'max:50',
+            'new_medium' => 'max:100',
+            'new_description' => 'max:1000'
+        ]);
+
+        $art = new \App\Artwork;
+        $art->artwork_name = $request->input('new_artwork_name');
+        $art->year_completed = $request->input('new_year_completed');
+        $art->artist_name = $request->input('new_artist_name');
+        $art->medium = $request->input('new_medium');
+        $art->url = $request->input('new_url');
+        $art->description = $request->input('new_description');
+        $art->save();
+
+        $request->session()->flash('status', 'The artwork was added!');
+        return redirect()->route('home');
     }
 
     /**
@@ -56,7 +77,8 @@ class ArtworkController extends Controller
      */
     public function edit($id)
     {
-        //
+        $art = \App\Artwork::find($id);
+        return view('artworks.edit', compact('art'));
     }
 
     /**
@@ -68,7 +90,26 @@ class ArtworkController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'new_artwork_name' => 'max:100',
+            'new_url' => 'max:250|url',
+            'new_year_completed' => 'max:20',
+            'new_artist_name' => 'max:50',
+            'new_medium' => 'max:100',
+            'new_description' => 'max:1000'
+        ]);
+
+        $art = \App\Artwork::find($id);
+        $art->artwork_name = $request->input('new_artwork_name');
+        $art->year_completed = $request->input('new_year_completed');
+        $art->artist_name = $request->input('new_artist_name');
+        $art->medium = $request->input('new_medium');
+        $art->url = $request->input('new_url');
+        $art->description = $request->input('new_description');
+        $art->save();
+
+        $request->session()->flash('status', 'The artwork was updated!');
+        return redirect()->route('home');
     }
 
     /**

@@ -6,11 +6,12 @@
 
 @section('card-content')
 
-<form class="form" action="" method="POST">
+<form id="addForm" class="form" action="/artworks" method="post">
+
     @csrf
     <div class="form-group pb-2">
         <label class="form-control label" for="new_artwork_name"><strong>Title</strong></label>
-        <input class="form-control" type="text" name="new_artwork_name" id="new_artwork_name" placeholder="Title..." required>
+        <input class="form-control" type="text" name="new_artwork_name" id="new_artwork_name" placeholder="Title...">
     </div>
     <div class="form-group pb-2">
         <label class="form-control label" for="new_year_completed"><strong>Date</strong></label>
@@ -33,7 +34,6 @@
         <textarea class="form-control" name="new_description" id="new_description" placeholder="Brief description of the artwork (Max 1000 characters)"></textarea>
     </div>
     <button class="btn form-control btn-dark" type="submit">Submit Artwork</button>
-
 
 </form>
 
