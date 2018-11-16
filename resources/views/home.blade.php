@@ -25,7 +25,14 @@
                         <p class="col-4"><strong>Medium:</strong></p> <p class="col-8">{{ $art->medium ? $art->medium : 'N/A' }}</p>
                         <p class="col-4"><strong>Description:</strong></p> <p class="col-8">{{ $art->description ? $art->description : 'N/A' }}</p>
                     </div>
-                    <a href="/artworks/{{ $art->id }}/edit">Edit</a>
+                    <div class="row">
+                        <a class="btn btn-dark col-5" href="/artworks/{{ $art->id }}/edit">Edit</a>
+                        <form class="col-6" action="/artworks/{{ $art->id }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-dark col-12" type="submit">Delete</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         @endforeach
