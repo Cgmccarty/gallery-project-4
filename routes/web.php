@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $artworks = \App\Artwork::get()->all();
+    return view('home', compact('artworks'));
 });
 
 Auth::routes();

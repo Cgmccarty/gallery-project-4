@@ -36,6 +36,12 @@ img {
     max-height: 400px;
 }
 
+.card {
+    background-color: darkgrey;
+    border-color: grey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .75);
+}
+
 div > img {
     border-radius: 1px;
 }
@@ -45,6 +51,6 @@ div > img {
     font-family: 'Cinzel', serif;
 }
 
-.card-body {
-    background-color: darkgrey;
+.card-image {
+    margin-left: 35px;
 }
