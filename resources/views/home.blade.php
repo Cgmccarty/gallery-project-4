@@ -17,9 +17,9 @@
 
                 <p class="text-center">Welcome! Galerie Gothic is the new up and coming website for Gothic period art. All content is shared between users,
                     meaning that everyone can edit, add, and delete exhibits. We encourage everyone to verify whether or not the art comes from the gothic
-                    period before posting. <strong>Any irrelevant content  will be removed!</strong></p>
-                <p class="text-center pb-4 border-bottom">Thanks for stopping by, and enjoy yourself!
+                    period before posting. <strong>Any irrelevant content  will be removed!</strong>
                 </p>
+                <p class="text-center pb-4 border-bottom">Thanks for stopping by, and enjoy yourself!</p>
             </div>
 
             @foreach ($artworks as $art)

@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li><a class="text-light" href="/artworks/create">Add Art</a></li>
+                        <li><a class="nav-link text-light" href="/artworks/create">Add Art</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
